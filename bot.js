@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/littletomato1/bot/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/littletomato1/bot/lang/langIndex.json", function (json) {
             var link = zetaBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -182,9 +182,9 @@
         status: false,
         name: "zetaBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/littletomato1/bot/master/bot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/littletomato1/bot/bot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/littletomato1/bot/master/lang/en.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/littletomato1/bot/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -192,7 +192,7 @@
         settings: {
             botName: "zetaBot",
             language: "english",
-            chatLink: "https://rawgit.com/littletomato1/bot/master/lang/en.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/littletomato1/bot/lang/en.json",
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
